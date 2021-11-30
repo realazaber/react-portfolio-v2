@@ -14,19 +14,25 @@ function Nav () {
 
     return (
         <Slide right>
-            <nav id="navbar">
-                <a href="#wave1">
-                    Home
+            <nav>
+                
+                <a href="#home">
+                    <div id="logo">
+                        A.
+                    </div>
                 </a>
-                <a href="#wave2">
-                    About me
-                </a>
-                <a href="#projects">
-                    My Projects
-                </a>
-                <a href="#wave4">
-                    Contact me
-                </a>
+
+                <div id="right">
+                    <a href="#about">
+                        About 
+                    </a>
+                    <a href="#projects">
+                        Projects
+                    </a>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </div>
             </nav>
 
             <button id="mobileMenu"  onClick={openMenu}>

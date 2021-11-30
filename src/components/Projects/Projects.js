@@ -22,7 +22,7 @@ function Projects() {
 
                     //Only show first 4 projects. The rest are in more projects.
                     counter++;
-                    if (counter <= 4) {
+                    if (counter <= 6) {
                         return (
                             <Bounce bottom>                                
                             <Project
