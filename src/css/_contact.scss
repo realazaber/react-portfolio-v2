@@ -62,8 +62,8 @@ label {
         border: none;
         border-radius: 10px;
         padding: 15px;
-        margin: auto;
-        width: 25vw;
+        
+        
         color: $primary;
         font-size: 18px;
     
@@ -103,18 +103,25 @@ label {
         left: 3vw;
         top: 13vh;
     }
+
+    input, textarea {
+        margin: auto;
+        width: 25vw;
+    }
 }
 
 /* Mobile */
 @media only screen and (max-width: 850px) {
-        #contactForm {
-        font-size: x-large;
+    #contactForm {
+        font-size: 20px;
+    }
+
+    #inputFields {
+        flex-direction: column;
     }
 
     input, textarea {
         font-size: larger;
-        width: 90%;
-        margin-bottom: 5px;
     }
 
     input {

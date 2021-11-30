@@ -33,9 +33,8 @@ body {
 }
 
 .container {
-    width: 80%;
+    
     margin: auto;
- 
 }
 
 .sectionTitlePrimary, .sectionTitleSecondary {
@@ -83,6 +82,10 @@ body {
 /* Tablets and Desktop */
 @media only screen and (min-width: 850px) {
 
+    .container {
+        width: 80%;
+    }
+
     #socials {
 
         flex-direction: row;
@@ -98,6 +101,10 @@ body {
 
 /* Mobile */
 @media only screen and (max-width: 850px) {
+
+    .container {
+        width: 90%;
+    }
 
     #socials {
         align-items: center;
