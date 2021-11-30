@@ -7,8 +7,7 @@ function Home() {
 
     return (
         <div id="home">
-            <div className="container">
-        
+            <div className="container">        
                 <Fade>
                 <h1 id="welcomeText">
                     Hello there, I am Alex                     

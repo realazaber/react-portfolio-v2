@@ -33,7 +33,7 @@ function Contact() {
                             <div>
                                 <div className="inputSection">                                            
                                     <label htmlFor="message">Message *</label>
-                                    <textarea id="message" cols="30" rows="8" name="Message"></textarea>                            
+                                    <textarea id="message" cols="30" rows="9" name="Message"></textarea>                            
                                 </div>
                             </div>
                         </div>
