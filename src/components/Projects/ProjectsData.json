@@ -1,0 +1,60 @@
+[
+
+    {
+        "img": "https://raw.githubusercontent.com/therealcoolpup/whats-the-weather/main/whats%20the%20weather.png",
+        "altTxt": "React weather app",
+        "category": "Web development",
+        "description": "React weather app using open weather api.",
+        "linkRepo": "https://github.com/therealcoolpup/whats-the-weather",
+        "linkWebsite": "https://therealcoolpup.github.io/whats-the-weather/"
+    },
+    {
+        "img": "https://raw.githubusercontent.com/therealcoolpup/email-receipt-santa-cruz/main/Santa%20Cruz%20HTML%20CSS%20Email.png",
+        "altTxt": "Sample HTML Email for Santa Cruz Skateboards",
+        "category": "Web development",
+        "description": "Sample HTML Email for Santa Cruz Skateboards.",
+        "linkRepo": "https://github.com/therealcoolpup/email-receipt-santa-cruz",
+        "linkWebsite": "https://therealcoolpup.github.io/email-receipt-santa-cruz/"
+    },
+    {
+        "img": "https://therealcoolpup.github.io/java-project-management-app/images/screenshots/Multiple%20projects.png",
+        "altTxt": "Java project management app",
+        "category": "Application development",
+        "description": "Project management app made in Java using the Java FX library for the GUI and jdbc for the mySQL database.",
+        "linkRepo": "https://github.com/therealcoolpup/java-project-management-app",
+        "linkWebsite": "https://therealcoolpup.github.io/java-project-management-app/"   
+    },
+    {
+        "img": "https://raw.githubusercontent.com/therealcoolpup/cheeky-chicken/main/demo.png",
+        "altTxt": "Remake of Cheeky Chicken Website.",
+        "category": "Web development",
+        "description": "Remake of Cheeky Chicken Website.",
+        "linkRepo": "https://github.com/therealcoolpup/cheeky-chicken",
+        "linkWebsite": "https://therealcoolpup.github.io/cheeky-chicken/"
+    },
+    {
+        "img": "https://therealcoolpup.github.io/bikehire-v2/screenshots/Bikes.png",
+        "altTxt": "Java swing app for bike hire",
+        "category": "Application development",
+        "description": "App made in java swing for managing bike rentals.",
+        "linkRepo": "https://github.com/therealcoolpup/bikehire-v2",
+        "linkWebsite": "https://therealcoolpup.github.io/bikehire-v2"
+    },
+    {
+        "img": "https://raw.githubusercontent.com/therealcoolpup/react-christmas-countdown/main/demo.png",
+        "altTxt": "Christmas countdown made with React.",
+        "category": "Web development",
+        "description": "Christmas countdown made with React.",
+        "linkRepo": "https://github.com/therealcoolpup/react-christmas-countdown",
+        "linkWebsite": "https://therealcoolpup.github.io/react-christmas-countdown/"
+    },
+    {
+        "img": "https://raw.githubusercontent.com/therealcoolpup/react-tip-calculator/main/demo.png",
+        "altTxt": "Tip calculator made with React.",
+        "category": "Web development",
+        "description": "Tip calculator made with React.",
+        "linkRepo": "https://github.com/therealcoolpup/react-tip-calculator",
+        "linkWebsite": "https://therealcoolpup.github.io/react-tip-calculator/"
+    }
+
+]
