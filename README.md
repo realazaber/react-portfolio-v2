@@ -1,1 +1,1 @@
-My portfolio site made with react.
+Remade react portfolio site.
