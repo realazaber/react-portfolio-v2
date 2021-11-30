@@ -1,8 +1,12 @@
-.inputField {
-    resize: none;
+#contact {
+    margin-top: 5vh;
+    .sectionTitlePrimary {
+        color: $primary;
+    }
 }
 
 #contactForm {
+    
     width: 60%;
     padding: 30px;
     margin: auto;
@@ -11,15 +15,75 @@
     font-weight: bold;
     font-size: larger;
     margin-bottom: 50px;
+    
+
+
+    #inputFields {
+        display: flex;
+        justify-content: center;
+    }
+
+    #btnSubmit {
+        background-color: $primary;
+        border: none;
+        border-radius: 10px;
+        color: $white;
+        margin-top: 20px;
+        font-size: 25px;
+        padding: 20px 35px;
+        transition-duration: 500ms;
+    
+        &:hover {
+            border-radius: 20px;
+            transition-duration: 500ms;
+        }
+    }   
+    
+    div {
+        margin: 0px 5px;
+    }
 }
 
-input, textarea {
-    border: 1px solid #979797;
-    padding: 15px;
-    &:focus {
-        border: 1px solid #979797;
-        border-bottom: 5px solid $secondary;
+label {
+    
+    text-align: left;
+}
+
+.inputSection {
+    margin-top: 25px;  
+    display: flex;
+    flex-direction: column;
+    
+
+    input, textarea {
+        background-color: #dfdfdf;
+        border: none;
+        border-radius: 10px;
+        padding: 15px;
+        margin: auto;
+        width: 20vw;
+        color: $primary;
+        font-size: 18px;
+    
+        &:focus {
+            
+            border-bottom: 5px solid $secondary;    
+        }
     }
+}
+
+
+::placeholder { /* Firefox */
+    color: $primary;
+    font-size: 20px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $primary;
+}
+   
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: $primary;
 }
 
 #socials {
@@ -28,32 +92,9 @@ input, textarea {
     padding: 15px 0px;
 }
 
-
-#btnSubmit {
-    background-color: $secondary;
-    border: none;
-    color: $white;
-    margin-top: 10px;
-    font-size: large;
-    padding: 15px 30px;
-    transition-duration: 500ms;
-
-    &:hover {
-        border-radius: 20px;
-        transition-duration: 500ms;
-    }
-}
-
 /* Tablets and Desktop */
 @media only screen and (min-width: 850px) {
-    #contactForm {
-        font-size: x-large;
-        width: 30%;
-    }
 
-    input, textarea {
-        width: 50%;
-    }
 
     #btnBack {
         position: fixed;
@@ -64,7 +105,7 @@ input, textarea {
 
 /* Mobile */
 @media only screen and (max-width: 850px) {
-    #contactForm {
+        #contactForm {
         font-size: x-large;
     }
 
