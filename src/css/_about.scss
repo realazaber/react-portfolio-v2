@@ -1,10 +1,6 @@
 #about {
-    
-    
     display: flex;
     margin: auto;
-    padding: 30px;
-    
     
 }
 
@@ -13,9 +9,7 @@
     flex-direction: column;   
 }
 
-#aboutMeTitle {
-    text-align: left;
-}
+
 
 #aboutMeText {
     color: $primary;
@@ -39,12 +33,18 @@
 
 }
 
-#mainInfo, #profileImg {
-    margin: 50px 0px;
-}
+
 
 /* Tablets and Desktop */
 @media only screen and (min-width: 850px) {
+
+    #about {
+        padding: 30px;   
+    }
+
+    #aboutMeTitle {
+        text-align: left;
+    }
 
     #mainInfo {
         
@@ -55,6 +55,9 @@
         flex-direction: column;
     }
 
+    #mainInfo, #profileImg {
+        margin: 50px 0px;
+    }
 
 
     #techStack {
@@ -93,6 +96,16 @@
 
 /* Mobile */
 @media only screen and (max-width: 850px) {
+    
+    #about {
+        
+        flex-direction: column;
+    }
+
+    #aboutMeTitle {
+        text-align: center;
+    }
+
     #aboutMeText {
         font-size: 20px;
         padding: 15px 30px;
@@ -100,7 +113,8 @@
     }
 
     #profileImg {
-        width: 95%;
+        margin: auto;
+        width: 60%;
         margin-bottom: -10px;
     }
 

@@ -106,7 +106,6 @@
   margin-top: -35px;
   background-image: url("../imgs/hero.jpg");
   background-size: cover;
-  background-position-y: -290px;
 }
 
 #home #welcomeText {
@@ -120,6 +119,7 @@
 @media only screen and (min-width: 850px) {
   #home {
     height: 95vh;
+    background-position-y: -290px;
   }
   #welcomeText {
     font-size: 50px;
@@ -129,7 +129,7 @@
 /* Mobile */
 @media only screen and (max-width: 850px) {
   #home {
-    height: 100vh;
+    height: 90vh;
     background-repeat: no-repeat;
   }
   #welcomeText {
@@ -144,7 +144,6 @@
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  padding: 30px;
 }
 
 #aboutMe {
@@ -155,10 +154,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-#aboutMeTitle {
-  text-align: left;
 }
 
 #aboutMeText {
@@ -191,12 +186,14 @@
           align-items: center;
 }
 
-#mainInfo, #profileImg {
-  margin: 50px 0px;
-}
-
 /* Tablets and Desktop */
 @media only screen and (min-width: 850px) {
+  #about {
+    padding: 30px;
+  }
+  #aboutMeTitle {
+    text-align: left;
+  }
   #mainInfo {
     width: 60%;
     margin-left: 1%;
@@ -210,6 +207,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  #mainInfo, #profileImg {
+    margin: 50px 0px;
   }
   #techStack {
     width: 100%;
@@ -245,13 +245,23 @@
 
 /* Mobile */
 @media only screen and (max-width: 850px) {
+  #about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #aboutMeTitle {
+    text-align: center;
+  }
   #aboutMeText {
     font-size: 20px;
     padding: 15px 30px;
     text-align: center;
   }
   #profileImg {
-    width: 95%;
+    margin: auto;
+    width: 60%;
     margin-bottom: -10px;
   }
   #techStack {
