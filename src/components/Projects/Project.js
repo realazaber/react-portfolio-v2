@@ -15,8 +15,7 @@ function Project(props) {
                         <br /><br />
                         <a href={props.linkRepo} target="_blank" rel="noopener noreferrer">
                             Repository
-                        </a>
-                        
+                        </a>                        
                         <a href={props.linkWebsite} target="_blank" rel="noopener noreferrer"> 
                             Website
                         </a>
