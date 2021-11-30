@@ -131,6 +131,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: auto;
+  padding: 30px;
 }
 
 #aboutMe {
@@ -185,6 +187,7 @@
 @media only screen and (min-width: 850px) {
   #mainInfo {
     width: 60%;
+    margin-left: 1%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -203,8 +206,8 @@
         grid-template-columns: repeat(6, 0.15fr);
   }
   #profileImg {
-    margin-left: 5%;
-    width: 30%;
+    margin-left: 10%;
+    width: 25%;
   }
   .technology {
     margin: 10px 10px;
