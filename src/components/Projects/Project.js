@@ -14,11 +14,11 @@ function Project(props) {
                         {props.description}
                         <br /><br />
                         <a href={props.linkRepo} target="_blank" rel="noopener noreferrer">
-                            Repository >
+                            Repository
                         </a>
                         
                         <a href={props.linkWebsite} target="_blank" rel="noopener noreferrer"> 
-                            Website >
+                            Website
                         </a>
                     </div>
                 </div>                

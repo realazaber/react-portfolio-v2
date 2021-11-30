@@ -4,6 +4,16 @@
     flex-direction: column;
     align-items: center;
     background-color: $primary;
+    
+}
+
+#projectsContent {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 60px 0px;
 }
 
 .project {
@@ -38,22 +48,27 @@
   -ms-transform: translate(-50%, -50%);
   text-align: center;
   width: 80%;
+  height: 70%;
 
   background-color: $white;
+  border-radius: 20px;
+  padding: 10px;
 
 
   display: flex;
   flex-direction: column;
+
   
 }
 
 .project:hover .projectImage {
-  opacity: 0.3;
+  opacity: 0.7;
   
 }
 
 .project:hover .projectInfo {
   opacity: 1;
+  
 }
 
 .projectText {
@@ -62,7 +77,23 @@
         text-decoration: none;
         font-weight: bold;
         margin: 0px 5px;
-        color: $primary;
+        color: $white;
+        font-size: 25px;
+        display: inline-block;
+        background-color: $secondary;
+        padding: 10px;
+        border-radius: 10px;
+        transition-duration: 500ms;
+
+        &:hover {
+          transition-duration: 500ms;
+          border-radius: 15px;
+        }
+
+        &:active {
+          transition-duration: 500ms;
+          border-radius: 20px;
+        }
     }
     
 }
@@ -86,6 +117,26 @@
   &:active {
     border-radius: 20px;
   }
+}
+
+#moreProjectsLink {
+  text-align: center;
+  color: $white;
+  
+  background: linear-gradient(127deg, rgba(248,138,125,1) 0%, rgba(201,112,102,1) 80%);
+  text-decoration: none;
+  border-bottom: 3px solid $primary;
+  font-size: 25px;
+  font-weight: bold;
+  transition-duration: 500ms;
+  padding: 20px 30px;
+  border-radius: 20px;
+
+  &:hover {
+      transition-duration: 500ms;
+      border-radius: 30px;
+  }
+  
 }
 
 

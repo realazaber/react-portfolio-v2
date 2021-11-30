@@ -265,6 +265,23 @@
   background-color: #0a2249;
 }
 
+#projectsContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 60px 0px;
+}
+
 .project {
   position: relative;
   width: 80%;
@@ -304,7 +321,10 @@
   -ms-transform: translate(-50%, -50%);
   text-align: center;
   width: 80%;
+  height: 70%;
   background-color: #FCFDFF;
+  border-radius: 20px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,7 +335,7 @@
 }
 
 .project:hover .projectImage {
-  opacity: 0.3;
+  opacity: 0.7;
 }
 
 .project:hover .projectInfo {
@@ -330,7 +350,26 @@
   text-decoration: none;
   font-weight: bold;
   margin: 0px 5px;
-  color: #0a2249;
+  color: #FCFDFF;
+  font-size: 25px;
+  display: inline-block;
+  background-color: #f88a7d;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.projectText a:hover {
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  border-radius: 15px;
+}
+
+.projectText a:active {
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  border-radius: 20px;
 }
 
 .btnProjectsNav {
@@ -352,6 +391,26 @@
 
 .btnProjectsNav:active {
   border-radius: 20px;
+}
+
+#moreProjectsLink {
+  text-align: center;
+  color: #FCFDFF;
+  background: linear-gradient(127deg, #f88a7d 0%, #c97066 80%);
+  text-decoration: none;
+  border-bottom: 3px solid #0a2249;
+  font-size: 25px;
+  font-weight: bold;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  padding: 20px 30px;
+  border-radius: 20px;
+}
+
+#moreProjectsLink:hover {
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  border-radius: 30px;
 }
 
 /* Desktop and tablet */
@@ -421,23 +480,6 @@
     width: 90%;
     height: 300px;
   }
-}
-
-#moreProjectsLink {
-  text-align: center;
-  color: #0a2249;
-  text-decoration: none;
-  border-bottom: 3px solid #0a2249;
-  font-size: 30px;
-  font-weight: bold;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-}
-
-#moreProjectsLink:hover {
-  padding-bottom: 5px;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
 }
 
 #moreProjectsNav {
