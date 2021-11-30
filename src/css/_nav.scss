@@ -54,6 +54,11 @@
             
         } 
     }
+
+    #mobileMenu, #mobileNav {
+        display: none;
+        visibility: hidden;
+    }
 }
 
 
@@ -71,7 +76,7 @@
         width: 50px;
         height: 50px;
         font-size: 20px;
-        background: linear-gradient(338deg, rgba(61,122,243,1) 39%, rgba(34,193,224,1) 100%);
+        background: $secondary;
         border: none;
         color: $white;
         font-weight: bold;

@@ -1,0 +1,27 @@
+#home {
+    margin-top: -35px;
+    height: 95vh;
+    background-image: url("../imgs/hero.jpg");
+    background-size: cover;
+    background-position-y: -290px;
+
+    #welcomeText {
+        color: $white;
+        
+        padding-top: 20vh;
+        z-index: 3;
+        text-align: center;
+        font-size: 50px;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 850px) {
+    #welcomeText {
+    
+        padding: 100px;
+        z-index: 3;
+    
+        text-align: center;
+    }
+}

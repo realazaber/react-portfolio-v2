@@ -1,0 +1,101 @@
+#about {
+    
+    text-align: center;
+    
+}
+
+#aboutMe {
+    display: flex;
+    flex-direction: column;  
+    
+}
+
+#aboutMeText {
+    color: $primary;
+}
+
+#techStack {
+    display: grid;
+    
+    
+}
+
+.technology {
+    color: $white;
+    margin-top: 15px;
+}
+
+
+
+
+.technology {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Tablets and Desktop */
+@media only screen and (min-width: 850px) {
+    #aboutMe {
+        width: 50%;  
+        
+    }
+
+    #aboutMeText {
+        flex-basis: 50%;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    #techStack {
+        width: 100%;
+        margin: auto;
+        grid-template-columns: repeat(6, 0.5fr); 
+    }
+
+    #profileImg {
+        padding-right: 1em;
+    }
+
+    .technology {
+        margin: 10px 10px;
+
+        img {
+            width: 100px;
+            height: 100px;
+    
+            transition-duration: 500ms;
+
+            &:hover {
+                transform: scale(1.1);
+        
+                transition-duration: 500ms;
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 850px) {
+    #aboutMeText {
+        font-size: 20px;
+        padding: 15px 30px;
+        text-align: center;
+    }
+
+    #profileImg {
+        width: 95%;
+        margin-bottom: -10px;
+    }
+
+    #techStack {
+        grid-template-columns: repeat(3, 0.5fr);
+    }
+
+    .technology img {
+        width: 80px;
+        height: 80px;
+    }
+}

@@ -1,0 +1,155 @@
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: $primary;
+}
+
+.project {
+
+  position: relative;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  opacity: 0.9;
+
+}
+.projectImage {
+  opacity: 1;
+  display: block;
+  
+  margin: 15px;
+  
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+
+.projectInfo {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+
+  background-color: $white;
+
+
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.project:hover .projectImage {
+  opacity: 0.3;
+  
+}
+
+.project:hover .projectInfo {
+  opacity: 1;
+}
+
+.projectText {
+    color: $secondary;
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0px 5px;
+        color: $primary;
+    }
+    
+}
+
+.btnProjectsNav {
+  color: $white;
+  background-color: $secondary;
+  padding: 15px 30px;
+  border: none;
+  font-size: 20px;
+  margin: 0px 10px;
+
+  transition-duration: 500ms;
+
+  &:hover {
+    border-radius: 15px;
+  
+    transition-duration: 500ms;
+  }
+  
+  &:active {
+    border-radius: 20px;
+  }
+}
+
+
+/* Desktop and tablet */
+@media only screen and (min-width: 850px) {
+  
+  #projectsList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+
+  .project {
+      margin: auto;
+  }
+
+  .projectText {
+      font-size: large;
+      
+  }
+
+  .projectImage {
+      width: 500px;
+      margin: 15px;
+      height: 350px;
+      
+  }
+
+  #projectsCategory {
+      grid-template-columns: repeat(3, 0.5fr);
+}
+}
+
+/* Mobile */
+@media only screen and (max-width: 850px) {
+    #projectsList {
+        display: grid;
+        align-items: center;
+        align-content: center;
+        grid-template-columns: repeat(1, 90%);
+        text-align: center;
+    }
+
+    .project {
+        margin: auto;
+        margin-bottom: 15px;
+        width: 80vw;  
+    } 
+
+    .projectText {
+        font-size: 15px;
+
+        a {
+            font-size: 15px;
+            margin-top: 3px;
+        }
+    }
+
+    .projectImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 300px;
+    }
+}
+

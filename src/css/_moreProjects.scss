@@ -1,0 +1,96 @@
+#moreProjectsLink {
+    text-align: center;
+    color: $primary;
+    text-decoration: none;
+    border-bottom: 3px solid $primary;
+    font-size: 30px;
+    font-weight: bold;
+    transition-duration: 500ms;
+}
+
+#moreProjectsLink:hover {
+    padding-bottom: 5px;
+    transition-duration: 500ms;
+}
+
+
+
+#moreProjectsNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#moreProjectsHeading .sectionTitlePrimary {
+    font-size: 35px;
+}
+
+#projectsCategory {
+    display: grid;
+    margin: auto;
+    width: 80%;
+}
+
+#btnBack {
+    text-decoration: none;
+}
+
+/* Desktop and tablet */
+@media only screen and (min-width: 850px) {
+
+}
+
+/* Mobile */
+@media only screen and (max-width: 850px) {
+    #moreProjectsHeading {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    #moreProjectsNav {
+        margin-top: 25px;
+        flex-direction: column;
+    }
+
+
+    #projectsCategory {
+        grid-template-columns: repeat(1, 0.5fr);
+
+        .project {
+            height: 250px;
+        }
+    }
+
+    
+
+    #desktopView {
+        display: none;
+        visibility: hidden;
+    }
+
+    #mobileView {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    #categorySelector {
+        border: none;
+        border-radius: 10px;
+        color: $background;
+        background-color: $secondary;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .btnProjectsNav {
+        margin-top: 10px;
+    }
+}

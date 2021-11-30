@@ -1,6 +1,7 @@
 import React from "react";
 
 import Slide from 'react-reveal/Slide';
+import { Fragment } from "react/cjs/react.production.min";
 
 function Nav () {
 
@@ -13,46 +14,49 @@ function Nav () {
     }
 
     return (
-        <Slide right>
-            <nav>
-                
-                <a href="#home">
-                    <div id="logo">
-                        A.
-                    </div>
-                </a>
-
-                <div id="right">
-                    <a href="#about">
-                        About 
+        <Fragment>
+            
+                <nav>
+                    <a href="#home">
+                        <div id="logo">
+                            A.
+                        </div>
                     </a>
-                    <a href="#projects">
-                        Projects
-                    </a>
-                    <a href="#contact">
-                        Contact
-                    </a>
-                </div>
-            </nav>
+                    <Slide right>
+                        <div id="right">
+                            <a href="#about">
+                                About 
+                            </a>
+                            <a href="#projects">
+                                Projects
+                            </a>
+                            <a href="#contact">
+                                Contact
+                            </a>
+                        </div>
+                    </Slide>
+                </nav>
+            
 
             <button id="mobileMenu"  onClick={openMenu}>
                 ☰
             </button>
             <div id="mobileNav">
-                <a href="#wave1" onClick={closeMenu}>
+                <a href="#home" onClick={closeMenu}>
                     Home
                 </a>
-                <a href="#wave2" onClick={closeMenu}>
+                <a href="#about" onClick={closeMenu}>
                     About me
                 </a>
                 <a href="#projects" onClick={closeMenu}>
                     My Projects
                 </a>
-                <a href="#wave4" onClick={closeMenu}>
+                <a href="#contact" onClick={closeMenu}>
                     Contact me
                 </a>
             </div>
-        </Slide>
+        </Fragment>
+        
     );
 }
 
