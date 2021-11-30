@@ -46,13 +46,13 @@ function Nav () {
                     Home
                 </a>
                 <a href="#about" onClick={closeMenu}>
-                    About me
+                    About
                 </a>
                 <a href="#projects" onClick={closeMenu}>
-                    My Projects
+                    Projects
                 </a>
                 <a href="#contact" onClick={closeMenu}>
-                    Contact me
+                    Contact
                 </a>
             </div>
         </Fragment>

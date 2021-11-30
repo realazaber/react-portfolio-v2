@@ -8,29 +8,29 @@ import Bounce from 'react-reveal/Bounce';
 function About() {
 
     return (
-        <div>
+        <div className="container">
             <div id="about">
-                <h1 className="sectionTitleSecondary">
-                    About me
-                </h1>
                 <div id="mainInfo">
-                    <Bounce left>
-                        <img id="profileImg" src={Profile} alt="Me" />
-                    </Bounce>
+                    <h2 className="sectionTitlePrimary" id="aboutMeTitle">
+                        About me
+                    </h2>
 
-                    <Bounce right>
+                    <Bounce left>
                         <div id="aboutMe">
-                            <h1 id="aboutMeText">
+                            <h2 id="aboutMeText">
                                 I have graduated from RMIT in 2021 with an associate degree in IT. I am passionate about all fields of IT 
                                 with my favourite being software development. Everyday I strive to learn more.
-                            </h1>
+                            </h2>
                             <TechStack />
                         </div>
                         
                     </Bounce>
                 </div>
+
+                <Bounce right>
+                    <img id="profileImg" src={Profile} alt="Me" />
+                </Bounce>
             </div>
-            <br />
         
         </div>
     )

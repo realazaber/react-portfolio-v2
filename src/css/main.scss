@@ -34,6 +34,9 @@ body {
 
 .container {
     width: 80%;
+    margin: auto;
+    border-left: 10px solid red;
+    border-right: 10px solid red;
 }
 
 .sectionTitlePrimary, .sectionTitleSecondary {
@@ -86,11 +89,7 @@ body {
         flex-direction: row;
     }
 
-    #mainInfo {
-        display: flex;
-        align-items: center;
-        justify-content: center;  
-    }
+
 
     #mobileView {
         display: none;

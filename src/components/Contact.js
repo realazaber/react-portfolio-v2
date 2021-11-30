@@ -4,9 +4,7 @@ import Zoom from 'react-reveal/Zoom';
 
 function Contact() {
     return (
-        <div>
-
-            
+        <div className="container">            
             <div id="contact">
                 <h1 className="sectionTitleSecondary">
                     Contact me

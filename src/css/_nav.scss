@@ -92,19 +92,25 @@
         bottom: 0;
         right: 0;
         background-color: $primary;
-        opacity: 0.3;
         overflow-x: hidden;
         transition: 0.5s;
-        padding-top: 60px;
+        padding-top: 20px;
         border-top-left-radius: 10px;
 
         a {
+            
+            
             color: $white;
             font-weight: bold;
             display: block;
             text-align: center;
             font-size: 25px;
-            margin-bottom: 3px;
+            text-decoration: none;            
+            border-bottom: 1px solid $white;
+            width: 80%;
+
+            margin-top: 8px;
+            margin: auto;
         }
     }
 }

@@ -12,43 +12,41 @@ function Projects() {
 
     return (
         <div id="projects">
-            <h1 className="sectionTitlePrimary">
-                My projects
-            </h1>
-            
-            <div id="projectsList">
-            
-                {ProjectsData.map((projectInfo, index) => {
+            <div className="container">
+                <h1 className="sectionTitlePrimary">
+                    My projects
+                </h1>
+                
+                <div id="projectsList">
+                
+                    {ProjectsData.map((projectInfo, index) => {
 
-                    //Only show first 4 projects. The rest are in more projects.
-                    counter++;
-                    if (counter <= 6) {
-                        return (
-                            <Bounce bottom>                                
-                            <Project
-                                img={projectInfo.img}
-                                altTxt={projectInfo.altTxt}
-                                category={projectInfo.category}
-                                description={projectInfo.description}
-                                linkRepo={projectInfo.linkRepo}
-                                linkWebsite={projectInfo.linkWebsite} 
-                            />      
-                            </Bounce>                           
-                        );
-                    }
-                    else {
-                        return (null);
-                    }
-                })}
-               
-            </div>
-            
-                <Link id="moreProjectsLink" to="/more-projects">                    
-                    
-                        More projects
-                    
+                        //Only show first 4 projects. The rest are in more projects.
+                        counter++;
+                        if (counter <= 6) {
+                            return (
+                                <Bounce bottom>                                
+                                <Project
+                                    img={projectInfo.img}
+                                    altTxt={projectInfo.altTxt}
+                                    category={projectInfo.category}
+                                    description={projectInfo.description}
+                                    linkRepo={projectInfo.linkRepo}
+                                    linkWebsite={projectInfo.linkWebsite} 
+                                />      
+                                </Bounce>                           
+                            );
+                        }
+                        else {
+                            return (null);
+                        }
+                    })}
+                
+                </div>            
+                <Link id="moreProjectsLink" to="/more-projects">                                        
+                        More projects                    
                 </Link>
-            
+            </div>
         </div>
     );
 }

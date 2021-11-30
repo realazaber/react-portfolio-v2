@@ -82,11 +82,10 @@
     bottom: 0;
     right: 0;
     background-color: #0a2249;
-    opacity: 0.3;
     overflow-x: hidden;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 20px;
     border-top-left-radius: 10px;
   }
   #mobileNav a {
@@ -95,7 +94,11 @@
     display: block;
     text-align: center;
     font-size: 25px;
-    margin-bottom: 3px;
+    text-decoration: none;
+    border-bottom: 1px solid #FCFDFF;
+    width: 80%;
+    margin-top: 8px;
+    margin: auto;
   }
 }
 
@@ -125,7 +128,9 @@
 }
 
 #about {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #aboutMe {
@@ -136,6 +141,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#aboutMeTitle {
+  text-align: left;
 }
 
 #aboutMeText {
@@ -168,32 +177,41 @@
           align-items: center;
 }
 
+#mainInfo, #profileImg {
+  margin: 50px 0px;
+}
+
 /* Tablets and Desktop */
 @media only screen and (min-width: 850px) {
-  #aboutMe {
-    width: 50%;
-  }
-  #aboutMeText {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    text-align: center;
-    line-height: 40px;
+  #mainInfo {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #techStack {
     width: 100%;
     margin: auto;
-    -ms-grid-columns: (0.5fr)[6];
-        grid-template-columns: repeat(6, 0.5fr);
+    -ms-grid-columns: (0.15fr)[6];
+        grid-template-columns: repeat(6, 0.15fr);
   }
   #profileImg {
-    padding-right: 1em;
+    margin-left: 5%;
+    width: 30%;
   }
   .technology {
     margin: 10px 10px;
   }
   .technology img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     -webkit-transition-duration: 500ms;
             transition-duration: 500ms;
   }
@@ -202,6 +220,11 @@
             transform: scale(1.1);
     -webkit-transition-duration: 500ms;
             transition-duration: 500ms;
+  }
+  .technology b {
+    margin-top: 8px;
+    font-size: 20px;
+    color: #f88a7d;
   }
 }
 
@@ -619,6 +642,9 @@ body {
 
 .container {
   width: 80%;
+  margin: auto;
+  border-left: 10px solid red;
+  border-right: 10px solid red;
 }
 
 .sectionTitlePrimary, .sectionTitleSecondary {
@@ -667,17 +693,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-  #mainInfo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   #mobileView {
     display: none;

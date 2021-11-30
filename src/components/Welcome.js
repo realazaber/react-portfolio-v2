@@ -12,7 +12,7 @@ function Home() {
                 <Fade>
                 <h1 id="welcomeText">
                     Hello there, I am Alex                     
-                    <br /> a software engineer in Melbourne 
+                    <br /> a software developer in Melbourne 
                 </h1>
                 </Fade>
             </div>
