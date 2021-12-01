@@ -140,7 +140,7 @@
 
 
 /* Desktop and tablet */
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 1300px) {
   
   #projectsList {
     display: grid;
@@ -174,7 +174,7 @@
 }
 
 /* Mobile */
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1300px) {
     #projectsList {
         display: grid;
         align-items: center;

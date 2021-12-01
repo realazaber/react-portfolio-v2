@@ -219,7 +219,7 @@
 }
 
 /* Tablets and Desktop */
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 1300px) {
   #about {
     padding: 30px;
   }
@@ -276,7 +276,7 @@
 }
 
 /* Mobile */
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1300px) {
   #about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -469,7 +469,7 @@
 }
 
 /* Desktop and tablet */
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 1300px) {
   #projectsList {
     display: -ms-grid;
     display: grid;
@@ -501,7 +501,7 @@
 }
 
 /* Mobile */
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1300px) {
   #projectsList {
     display: -ms-grid;
     display: grid;
