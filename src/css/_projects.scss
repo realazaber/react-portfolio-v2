@@ -139,12 +139,12 @@
 }
 
 
-/* Desktop and tablet */
-@media only screen and (min-width: 1300px) {
+/* Desktop */
+@media only screen and (min-width: 1200px) {
   
   #projectsList {
+    
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     align-items: center;
   }
 
@@ -168,13 +168,23 @@
       
   }
 
-  #projectsCategory {
-      grid-template-columns: repeat(3, 0.5fr);
+}
+
+@media only screen and (min-width: 1600px) {
+  #projectsList {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  #projectsList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
 /* Mobile */
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
     #projectsList {
         display: grid;
         align-items: center;
