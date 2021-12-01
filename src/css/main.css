@@ -20,17 +20,17 @@
     -webkit-transition-duration: 300ms;
             transition-duration: 300ms;
   }
-  nav a:hover {
+  nav #right {
+    position: absolute;
+    right: 30px;
+  }
+  nav #right a:hover {
     font-size: 30px;
     -webkit-transition: ease;
     transition: ease;
     -webkit-transition-duration: 300ms;
             transition-duration: 300ms;
     text-decoration: none;
-  }
-  nav #right {
-    position: absolute;
-    right: 30px;
   }
   #azlogo {
     -webkit-transition: 500ms;
@@ -707,6 +707,7 @@ label {
   border: none;
   border-radius: 10px;
   padding: 15px;
+  resize: none;
   color: #0a2249;
   font-size: 18px;
 }

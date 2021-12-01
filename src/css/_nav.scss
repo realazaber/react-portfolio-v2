@@ -23,17 +23,21 @@
             transition: ease;
             transition-duration: 300ms;
             
-            &:hover {
-                font-size: 30px;
-                transition: ease;
-                transition-duration: 300ms;
-                text-decoration: none;
-            }
+
         }
 
         #right {
             position: absolute;
             right: 30px;
+            
+
+            a:hover {                
+                font-size: 30px;    
+                transition: ease;
+                transition-duration: 300ms;
+                text-decoration: none;
+                
+            }
         }
     }
 
