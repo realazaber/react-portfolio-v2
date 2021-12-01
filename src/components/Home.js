@@ -4,16 +4,17 @@ import Welcome from "./Welcome.js";
 import About from './About/About.js';
 import Projects from "./Projects/Projects.js";
 import Contact from "./Contact.js";
+import { Fragment } from 'react';
 
 function Home() {
     return (
-        <div>
+        <Fragment>
               <Nav />
               <Welcome/>
               <About/>
               <Projects/>
               <Contact/>
-        </div>
+        </Fragment>
     )
 }
 
