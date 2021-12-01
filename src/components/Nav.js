@@ -18,7 +18,7 @@ function Nav () {
     try {
         window.onscroll = function() {scrollFunction()};
     } catch (error) {
-        
+        console.log(error);
     }
 
     const logoMinWidth = "70px";
@@ -26,10 +26,14 @@ function Nav () {
 
 
     function scrollFunction() {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            document.getElementById("azlogo").style.width = logoMinWidth;
-        } else {
-            document.getElementById("azlogo").style.width = logoMaxWidth;
+        try {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("azlogo").style.width = logoMinWidth;
+            } else {
+                document.getElementById("azlogo").style.width = logoMaxWidth;
+            }
+        } catch (error) {
+            console.log(error);
         }
     }
 

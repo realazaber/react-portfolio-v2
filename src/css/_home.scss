@@ -18,15 +18,16 @@
         color: $white;
         z-index: 3;
         text-align: center;
+        text-shadow: 1px 1px 1px $primary;
     }
 
     button {
         background-color: $secondary;
         color: $white;
         border: none;
-        padding: 15px 20px;
+        
         margin-top: 60px;
-        font-size: 30px;
+
         border-radius: 15px;
         font-weight: bold;
 
@@ -51,7 +52,14 @@
     #home {
         height: 95vh;
         background-position-y: -290px;
+
+        button {
+            padding: 15px 20px;
+            font-size: 30px;
+        }
     }
+
+
 
     #welcomeText {
         font-size: 50px;
@@ -64,6 +72,11 @@
     #home {
         height: 90vh;
         background-repeat: no-repeat;
+
+        button {
+            padding: 15px 18px;
+            font-size: 20px;
+        }
     }
 
     #welcomeText {

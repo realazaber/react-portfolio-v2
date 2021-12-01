@@ -113,15 +113,14 @@
   color: #FCFDFF;
   z-index: 3;
   text-align: center;
+  text-shadow: 1px 1px 1px #0a2249;
 }
 
 #home button {
   background-color: #f88a7d;
   color: #FCFDFF;
   border: none;
-  padding: 15px 20px;
   margin-top: 60px;
-  font-size: 30px;
   border-radius: 15px;
   font-weight: bold;
   -webkit-transition-duration: 500ms;
@@ -146,6 +145,10 @@
     height: 95vh;
     background-position-y: -290px;
   }
+  #home button {
+    padding: 15px 20px;
+    font-size: 30px;
+  }
   #welcomeText {
     font-size: 50px;
   }
@@ -156,6 +159,10 @@
   #home {
     height: 90vh;
     background-repeat: no-repeat;
+  }
+  #home button {
+    padding: 15px 18px;
+    font-size: 20px;
   }
   #welcomeText {
     font-size: 30px;
