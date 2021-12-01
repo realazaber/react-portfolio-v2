@@ -2,6 +2,7 @@ import React from "react";
 
 import Slide from 'react-reveal/Slide';
 import { Fragment } from "react/cjs/react.production.min";
+import logo from "../imgs/logo.png";
 
 function Nav () {
 
@@ -13,14 +14,27 @@ function Nav () {
         document.getElementById("mobileNav").style.width = "0px";
     }
 
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function() {scrollFunction()};
+
+    const logoMinWidth = "70px";
+    const logoMaxWidth = "120px";
+
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("azlogo").style.width = logoMinWidth;
+        } else {
+            document.getElementById("azlogo").style.width = logoMaxWidth;
+        }
+    }
+
     return (
         <Fragment>
             
                 <nav>
                     <a href="#home">
-                        <div id="logo">
-                            A.
-                        </div>
+                        <img id="azlogo" src={logo} alt="logo" width={logoMaxWidth}/>
                     </a>
                     <Slide right>
                         <div id="right">

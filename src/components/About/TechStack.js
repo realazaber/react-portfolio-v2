@@ -8,7 +8,6 @@ function TechStack() {
             {
                 TechStackData.map((techStackInfo, index) => {
                     
-                    let imgUrl = techStackInfo.img;
                     return (
                         
                         <div className="technology">

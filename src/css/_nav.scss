@@ -37,22 +37,10 @@
         }
     }
 
-    #logo {
-        background-color: $primary;
-        padding: 10px 10px;
-        text-align: center;
-        margin-left: 20px;
-        font-size: 25px;
-        color: $white;
-        font-weight: bold;
+    #azlogo {
         border-radius: 10px;
-        transition-duration: 300ms;
-
-        &:hover {
-            color: $secondary;
-            transition-duration: 300ms;
-            
-        } 
+        transition: 500ms;
+        margin-left: 20px;
     }
 
     #mobileMenu, #mobileNav {
