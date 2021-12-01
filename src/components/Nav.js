@@ -14,8 +14,12 @@ function Nav () {
         document.getElementById("mobileNav").style.width = "0px";
     }
 
-    // When the user scrolls down 50px from the top of the document, resize the header's font size
-    window.onscroll = function() {scrollFunction()};
+    
+    try {
+        window.onscroll = function() {scrollFunction()};
+    } catch (error) {
+        
+    }
 
     const logoMinWidth = "70px";
     const logoMaxWidth = "120px";

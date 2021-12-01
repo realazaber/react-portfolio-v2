@@ -1,7 +1,7 @@
 import React from "react";
 
 import Fade from 'react-reveal/Fade';
-
+import Bounce from 'react-reveal/Bounce';
 
 function Home() {
 
@@ -14,10 +14,15 @@ function Home() {
                     <br /> a software developer in Melbourne 
                 </h1>
                 </Fade>
+                <Bounce>
+                    <a href="#about">
+                        <button>
+                            Lets make something great
+                        </button>
+                    </a>
+                </Bounce>
             </div>
-        </div>
-
-        
+        </div>        
     )
 }
 

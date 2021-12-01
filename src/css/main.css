@@ -33,7 +33,6 @@
     right: 30px;
   }
   #azlogo {
-    border-radius: 10px;
     -webkit-transition: 500ms;
     transition: 500ms;
     margin-left: 20px;
@@ -97,11 +96,48 @@
   background-size: cover;
 }
 
+#home .container {
+  height: 95vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #home #welcomeText {
   color: #FCFDFF;
-  padding-top: 20vh;
   z-index: 3;
   text-align: center;
+}
+
+#home button {
+  background-color: #f88a7d;
+  color: #FCFDFF;
+  border: none;
+  padding: 15px 20px;
+  margin-top: 60px;
+  font-size: 30px;
+  border-radius: 15px;
+  font-weight: bold;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+#home button:hover {
+  border-radius: 20px;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+#home button:active {
+  border-radius: 25px;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
 }
 
 /* Desktop */
@@ -776,6 +812,19 @@ body {
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: auto;
 }
 

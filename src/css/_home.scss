@@ -5,14 +5,45 @@
     background-size: cover;
     
 
+
+    .container {
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
     #welcomeText {
         color: $white;
-        
-        padding-top: 20vh;
         z-index: 3;
         text-align: center;
-        
     }
+
+    button {
+        background-color: $secondary;
+        color: $white;
+        border: none;
+        padding: 15px 20px;
+        margin-top: 60px;
+        font-size: 30px;
+        border-radius: 15px;
+        font-weight: bold;
+
+        transition-duration: 500ms;
+
+        &:hover {
+            border-radius: 20px;
+            transition-duration: 500ms;
+        }
+
+        &:active {
+            border-radius: 25px;
+            transition-duration: 500ms;
+        }
+    }
+
+
 }
 
 /* Desktop */
