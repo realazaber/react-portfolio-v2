@@ -198,7 +198,7 @@
 }
 
 .technology {
-  color: #FCFDFF;
+  color: #f88a7d;
   margin-top: 15px;
 }
 
@@ -293,7 +293,7 @@
   }
   #profileImg {
     margin: auto;
-    width: 60%;
+    width: 40%;
     margin-bottom: -10px;
   }
   #techStack {
