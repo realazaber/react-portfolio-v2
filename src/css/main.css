@@ -469,7 +469,7 @@
 }
 
 /* Desktop */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 800px) {
   #projectsList {
     display: -ms-grid;
     display: grid;
@@ -501,7 +501,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+@media only screen and (min-width: 800px) and (max-width: 1600px) {
   #projectsList {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -509,7 +509,7 @@
 }
 
 /* Mobile */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 800px) {
   #projectsList {
     display: -ms-grid;
     display: grid;
