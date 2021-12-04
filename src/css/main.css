@@ -91,13 +91,13 @@
 }
 
 #home {
-  margin-top: -35px;
   background-image: url("../imgs/hero.jpg");
-  background-size: cover;
+  background-size: auto;
+  height: 100vh;
 }
 
 #home .container {
-  height: 95vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,7 +142,7 @@
 /* Desktop */
 @media only screen and (min-width: 1630px) {
   #home {
-    height: 95vh;
+    height: 100vh;
     background-position-y: -290px;
   }
   #home button {
