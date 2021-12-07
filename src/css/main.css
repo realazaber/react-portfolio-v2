@@ -671,10 +671,8 @@
 
 #contact {
   margin-top: 5vh;
-}
-
-#contact .sectionTitlePrimary {
   color: #0a2249;
+  text-align: center;
 }
 
 #contactForm {

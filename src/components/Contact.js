@@ -9,6 +9,10 @@ function Contact() {
                 <h1 className="sectionTitlePrimary">
                     Contact me
                 </h1>
+                <h2>
+                    I would love to hear from you, whether its about a 
+                    project idea, opportunity or just have a chat :)
+                </h2>
                 <Zoom>
                     <form id="contactForm" action="https://formspree.io/f/xqkwvwdg" method="post">
                     

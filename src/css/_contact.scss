@@ -1,8 +1,9 @@
 #contact {
     margin-top: 5vh;
-    .sectionTitlePrimary {
-        color: $primary;
-    }
+
+    color: $primary;
+    text-align: center;
+
 }
 
 #contactForm {
@@ -42,6 +43,8 @@
         margin: 0px 5px;
     }
 }
+
+
 
 label {
     
