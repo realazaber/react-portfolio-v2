@@ -11,7 +11,8 @@ function Contact() {
                 </h1>
                 <h2>
                     I would love to hear from you, whether its about a 
-                    project idea, opportunity or just have a chat :)
+                    <br />
+                    project idea, opportunity or even just have a chat :)
                 </h2>
                 <Zoom>
                     <form id="contactForm" action="https://formspree.io/f/xqkwvwdg" method="post">
