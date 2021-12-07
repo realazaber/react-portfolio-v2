@@ -18,8 +18,11 @@ function About() {
                     <Bounce left>
                         <div id="aboutMe">
                             <h2 id="aboutMeText">
-                                I have graduated from RMIT in 2021 with an associate degree in IT. I am passionate about all fields of IT 
-                                with my favourite being software development. Everyday I strive to learn more.
+                                I am passionate about all fields of Software Development, especially web development. 
+                                I always strive to create amazing applications and websites that help solve problems 
+                                while also delivering the a great user experience.
+                                <br /><br />
+                                I also have an Associate Degree in IT from RMIT.
                             </h2>
                             <TechStack />
                         </div>
