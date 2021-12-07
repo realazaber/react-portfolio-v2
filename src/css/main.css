@@ -364,6 +364,8 @@
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .projectInfo {

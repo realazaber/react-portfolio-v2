@@ -27,14 +27,17 @@ function Projects() {
                             if (counter <= 6) {
                                 return (
                                     <Bounce bottom>                                
-                                    <Project
-                                        img={projectInfo.img}
-                                        altTxt={projectInfo.altTxt}
-                                        category={projectInfo.category}
-                                        description={projectInfo.description}
-                                        linkRepo={projectInfo.linkRepo}
-                                        linkWebsite={projectInfo.linkWebsite} 
-                                    />      
+                                        
+                                            <Project
+                                            key={index}
+                                            img={projectInfo.img}
+                                            altTxt={projectInfo.altTxt}
+                                            category={projectInfo.category}
+                                            description={projectInfo.description}
+                                            linkRepo={projectInfo.linkRepo}
+                                            linkWebsite={projectInfo.linkWebsite} 
+                                            />  
+                                        
                                     </Bounce>                           
                                 );
                             }

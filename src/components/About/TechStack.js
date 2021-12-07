@@ -10,7 +10,7 @@ function TechStack() {
                     
                     return (
                         
-                        <div className="technology">
+                        <div className="technology" key={index}>
                         <img src={ techStackInfo.img } alt= { techStackInfo.title } />
                             <b>{techStackInfo.title}</b>
                         </div>

@@ -38,6 +38,7 @@ function MoreProjects() {
                             return (
                                 <Fade>
                                     <Project
+                                        key={index}
                                         img={projectInfo.img}
                                         altTxt={projectInfo.altTxt}
                                         category={projectInfo.category}
@@ -56,6 +57,7 @@ function MoreProjects() {
                                 return (
                                     <Fade>
                                         <Project
+                                            key={index}
                                             img={projectInfo.img}
                                             altTxt={projectInfo.altTxt}
                                             category={projectInfo.category}
