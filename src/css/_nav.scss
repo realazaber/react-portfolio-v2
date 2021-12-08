@@ -21,22 +21,23 @@
             font-weight: bold;
             
             transition: ease;
-            transition-duration: 300ms;
-            
+            transition-duration: 500ms;
 
+            display: block;  
+            
         }
 
         #right {
             position: absolute;
             right: 30px;
+            display: flex;
             
-
             a:hover {                
-                font-size: 30px;    
+                
                 transition: ease;
                 transition-duration: 300ms;
                 text-decoration: none;
-                
+                transform: scale(1.2);
             }
         }
     }

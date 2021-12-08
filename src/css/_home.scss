@@ -36,6 +36,8 @@
         &:hover {
             border-radius: 20px;
             transition-duration: 500ms;
+            transform: scale(1.1);
+            transition: all 0.3s cubic-bezier(0.25, 0.25, 0.5, 1.9);
         }
 
         &:active {

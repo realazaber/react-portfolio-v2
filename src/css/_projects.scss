@@ -136,6 +136,8 @@
   &:hover {
       transition-duration: 500ms;
       border-radius: 30px;
+      transform: scale(1.1);
+      transition: all 0.3s cubic-bezier(0.25, 0.25, 0.5, 1.9);
   }
   
 }
