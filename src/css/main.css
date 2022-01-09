@@ -229,6 +229,10 @@
           align-items: center;
 }
 
+.technology:hover {
+  cursor: pointer;
+}
+
 /* Tablets and Desktop */
 @media only screen and (min-width: 1300px) {
   #about {
